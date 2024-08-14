@@ -59,19 +59,19 @@
         </div>
 
         <div>
-          <label for="data_cadastro">Data de cadastro:</label>
-          <input type="date" id="data_cadastro" name="data_cadastro" readonly value="2001-01-01">
+          <label for="leitura">Campo de leitura:</label>
+          <input type="text" id="leitura" name="leitura" readonly value="leitura">
         </div>
 
         <fieldset>
           <legend>Sexo</legend>
           <div>
-            <input type="radio" id="sexo" name="sexo" value="F">
-            <label for="sexo">Feminino</label>
+            <input type="radio" id="feminino" name="sexo" value="F">
+            <label for="feminino">Feminino</label>
           </div>
           <div>
-            <input type="radio" id="sexo" name="sexo" value="M">
-            <label for="sexo">Masculino</label>
+            <input type="radio" id="masculino" name="sexo" value="M">
+            <label for="feminino">Masculino</label>
           </div>
         </fieldset>
 
@@ -104,13 +104,13 @@
         </div>
 
         <div>
-          <label for="logradouro_tipo">Tipo de logradouro: <label>
-              <select name="logradouro_tipo" id="logradouro_tipo" requided>
-                <option value="">Selecione...</option>
-                <option value="rua">Rua</option>
-                <option value="avenida">Avenida</option>
-                <option value="praca">Praça</option>
-              </select>
+          <label for="logradouro_tipo">Tipo de logradouro: </label>
+          <select name="logradouro_tipo" id="logradouro_tipo" required>
+            <option value="">Selecione...</option>
+            <option value="rua">Rua</option>
+            <option value="avenida">Avenida</option>
+            <option value="praca">Praça</option>
+          </select>
         </div>
 
         <div>
@@ -165,14 +165,14 @@
           </div>
         </fieldset>
 
-        <fieldset>
-          <legend>Observações</legend>
+        <div>
+          <legend>Observações: </legend>
           <textarea name="observacao" id="observacao"></textarea>
-        </fieldset>
+        </div>
 
         <div>
           <label for="imagem">Imagem:</label>
-          <input type="file" accept="image/*">
+          <input type="file" accept="image/*" id="imagem">
         </div>
       </fieldset>
 
