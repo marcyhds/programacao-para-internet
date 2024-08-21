@@ -103,13 +103,11 @@ li:hover {
   padding: 5px;
 }
 
-fieldset:first-child {
-  color: green;
-  
+legend:first-child {
+  color: gray;
 }
 
-legend:first-of-type {
+
+label:first-of-type {
   color: rgb(87, 47, 5);
 }
-
-
