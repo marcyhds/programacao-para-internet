@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/publica/anuncio.css">
+  <title>Anúncio</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <a href="../index.html">
+        <img id="logotipo" src="../../assets/logotipo.png" alt="logo do portal">
+      </a>
+    </div>
+    <div>
+      <a href="../index.html">
+        <h1>VEÍCULOS</h1>
+        <h2>compra e venda</h2>
+      </a>
+    </div>
+    <div class="signInSignUp">
+      <a href="../publica/cadastro.html">
+        <p>É anunciante?</p>
+        <p>Cadastre-se</p>
+      </a>
+      <span></span>
+      <a href="../publica/login.html">Entrar</a>
+    </div>
+  </header>
+
+  <nav>
+    <form id="fomularioBusca">
+      <div>
+        <label for="marca">Marca:</label>
+        <select id="marca" name="marca">
+          <option value="" selected>Selecione...</option>
+          <option value="marca1">Marca 1</option>
+          <option value="marca2">Marca 2</option>
+          <option value="marca3">Marca 3</option>
+        </select>
+      </div>
+      <div>
+        <label for="modelo">Modelo:</label>
+        <select id="modelo" name="modelo">
+          <option value="" selected>Selecione...</option>
+          <option value="modelo1">Modelo 1</option>
+          <option value="modelo2">Modelo 2</option>
+          <option value="modelo3">Modelo 3</option>
+        </select>
+      </div>
+      <div>
+        <label for="localizacao">Localização:</label>
+        <select id="localizacao" name="localizacao">
+          <option value="" selected>Selecione...</option>
+          <option value="cidade1">Cidade 1</option>
+          <option value="cidade2">Cidade 2</option>
+          <option value="cidade3">Cidade 3</option>
+        </select>
+      </div>
+      <div>
+        <button>Buscar</button>
+      </div>
+    </form>
+  </nav>
+
+  <main>
+    <div id="anuncio">
+      <h2>Anúncio</h2>
+      <div>
+        <img src="../../assets/carro1.png" alt="">
+      </div>
+      <div>
+        <h2>Lamborghini Urus S</h2>
+        <h3>R$ 3.290.000</h3>
+      </div>
+      <div>
+        <ul>
+          <li>Marca</li>
+          <li>Modelo</li>
+          <li>Ano</li>
+          <li>Localização</li>
+        </ul>
+      </div>
+    </div>
+    <div id="interesse">
+      <h2>Entre em Contato com o Anunciante</h2>
+      <form action="">
+        <div>
+          <label for="nome">Nome </label><br>
+          <input type="text" id="nome" required minlength="5" maxlength="50" autofocus />
+        </div>
+        <div>
+          <label for="telefone">Telefone </label><br>
+          <input type="tel" id="telefone" required />
+        </div>
+        <div>
+          <label for="mensagem">Mensagem</label>
+          <textarea name="mensagem" rows="5" cols="20">
+          </textarea>
+        </div>
+        <button id="botaoInteresse">Enviar Mensagem</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <address>
+      <p>Endereço</p>
+      <p>Contato</p>
+    </address>
+  </footer>
+</body>
+
+</html>

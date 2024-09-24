@@ -1,0 +1,168 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #444;
+  line-height: 1.5;
+  font-size: 0.8rem;
+
+  background-color: #d1603d;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2% 0;
+}
+
+/*************** HEADER ***************/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background-color: #ddd;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  padding: 10px;
+
+  text-align: center;
+  line-height: 0.5;
+}
+
+header img {
+  width: 7rem;
+  height: 7rem;
+}
+
+header h1,
+header h2 {
+  font-variant: small-caps;
+  color: #4f3824;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+header h2 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.signInSignUp a {
+  color: #444;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.signInSignUp {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.signInSignUp a:hover {
+  background-color: #666;
+  color: #ddd;
+}
+
+/*************** NAV ***************/
+nav {
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+
+  display: flex;
+  justify-content: space-around;
+
+  text-align: center;
+}
+
+nav form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  width: 100%;
+
+  justify-content: center;
+}
+
+nav form div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  align-items: center;
+}
+
+button {
+  background-color: #444;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+
+  color: #ddd;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+/*************** MAIN ***************/
+main {
+  padding: 0;
+  border-radius: 10px;
+  margin-bottom: 5px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.card {
+  background-color: #ddd;
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+
+  justify-content: center;
+  text-align: center;
+}
+
+.card div img {
+  height: 7rem;
+  width: auto;
+}
+
+.card ul>li {
+  text-align: justify;
+  display: block;
+}
+
+h3 {
+  color: #2a428c;
+}
+
+/*************** FOOTER ***************/
+footer {
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+
+  display: flex;
+  align-items: center;
+
+  justify-content: space-evenly;
+  text-align: center;
+}

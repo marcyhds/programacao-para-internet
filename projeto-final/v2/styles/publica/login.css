@@ -1,0 +1,87 @@
+body {
+  background-color: #d1603d;
+  color: #444;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+/*************** HEADER ***************/
+header {
+  background-color: #ddd;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+
+  box-shadow: 0 0 10px gray;
+  border-radius: 0px 10px 10px 0px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+}
+
+header img {
+  width: 15rem;
+  height: 15rem;
+}
+
+/*************** MAIN ***************/
+main {
+  background-color: #fff;
+
+  width: 240px;
+  height: 240px;
+  padding: 40px;
+
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  box-shadow: 0 0 10px gray;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%);
+}
+
+button,
+input {
+  width: 100%;
+  padding: 0.4rem;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  outline: none;
+
+  border: 0.5px solid gray;
+
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #444;
+
+  color: #fff;
+
+  margin-top: 20px;
+
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+input {
+  border-radius: 5px;
+}
+
+input:focus {
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px gray;
+}
