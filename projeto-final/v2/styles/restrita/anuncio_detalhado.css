@@ -1,0 +1,65 @@
+body {
+  background-color: #ddd;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2% 0;
+}
+
+/* HEADER, NAV, FOOTER e alguns estilos do BODY em general.css */
+
+/*************** MAIN ***************/
+main {
+  background-color: #bebdbd;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+
+  text-align: center;
+}
+
+ul>li {
+  margin: 5px;
+  padding: 10px;
+  display: inline-block;
+}
+
+h3 {
+  color: #2a428c;
+}
+
+.botoesAnuncio {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.anuncio {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.anuncio img {
+  width: 20rem;
+  height: auto;
+}
+
+#galeria {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#galeria>img {
+  width: 5rem;
+  height: auto;
+}
+
