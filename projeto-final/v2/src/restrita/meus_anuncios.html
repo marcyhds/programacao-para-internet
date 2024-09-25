@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../styles/general.css">
-  <link rel="stylesheet" href="../../styles/publica/anuncio.css">
-  <title>Anúncio</title>
+  <link rel="stylesheet" href="../../styles/restrita/meus_anuncios.css">
+  <title>Veículos - Compra e Venda</title>
 </head>
 
 <body>
@@ -23,12 +23,7 @@
       </a>
     </div>
     <div class="signInSignUp">
-      <a href="../publica/cadastro.html">
-        <p>É anunciante?</p>
-        <p>Cadastre-se</p>
-      </a>
-      <span></span>
-      <a href="../publica/login.html">Entrar</a>
+      <a href="login.html">Sair</a>
     </div>
   </header>
 
@@ -68,42 +63,57 @@
   </nav>
 
   <main>
-    <div id="anuncio">
-      <h2>Anúncio</h2>
-      <div>
-        <img src="../../assets/carro1.png" alt="">
-      </div>
-      <div>
-        <h2>Lamborghini Urus S</h2>
-        <h3>R$ 3.290.000</h3>
-      </div>
-      <div>
-        <ul>
-          <li>Marca</li>
-          <li>Modelo</li>
-          <li>Ano</li>
-          <li>Localização</li>
-        </ul>
-      </div>
+    <div>
+      <h2>Lista de Anúncios</h2>
     </div>
-    <div id="interesse">
-      <h2>Entre em Contato com o Anunciante</h2>
-      <form>
+    <div>
+      <ul>
+        <li><a href="main.html">Página Principal</a></li>
+        <li><a href="criar_anuncio.html">Criar Anúncio</a></li>
+        <li><a href="meus_anuncios.html">Meus Anúncios</a></li>
+        <li><a href="interesses.html">Interesses</a></li>
+      </ul>
+    </div>
+    <div class="cards">
+      <div class="card">
         <div>
-          <label for="nome">Nome </label><br>
-          <input type="text" id="nome" required minlength="5" maxlength="50" autofocus>
+          <img src="../../assets/carro1.png" alt="">
         </div>
         <div>
-          <label for="telefone">Telefone </label><br>
-          <input type="tel" id="telefone" required>
+          <h2>Lamborghini Urus S</h2>
+          <h3>R$ 3.290.000</h3>
+        </div>
+        <div class="botoesAnuncio">
+          <a href="">Ver mais detalhes</a>
+          <a href="">Excluir anúncio</a>
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <img src="../../assets/carro2.png" alt="">
         </div>
         <div>
-          <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" rows="5" cols="20">
-          </textarea>
+          <h2>Ferrari SF90</h2>
+          <h3>R$ 4.970.000</h3>
         </div>
-        <button id="botaoInteresse">Enviar Mensagem</button>
-      </form>
+        <div class="botoesAnuncio">
+          <a href="">Ver mais detalhes</a>
+          <a href="">Excluir anúncio</a>
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <img src="../../assets/carro6.png" alt="">
+        </div>
+        <div>
+          <h2>Mercedes-Benz AMG GT 63</h2>
+          <h3>R$ 1.635.000</h3>
+        </div>
+        <div class="botoesAnuncio">
+          <a href="">Ver mais detalhes</a>
+          <a href="">Excluir anúncio</a>
+        </div>
+      </div>
     </div>
   </main>
 

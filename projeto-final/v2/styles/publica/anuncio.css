@@ -1,121 +1,15 @@
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #444;
-  font-size: 0.8rem;
-  line-height: 1.5;
-
-  background-color: #d1603d;
+  background-color: #ddd;
   width: 80%;
   margin: 0 auto;
   padding: 2% 0;
 }
 
-/*************** HEADER ***************/
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-
-  background-color: #ddd;
-  border-radius: 15px;
-  margin-bottom: 5px;
-  padding: 10px;
-
-  text-align: center;
-  line-height: 0.5;
-}
-
-header div img {
-  width: 7rem;
-  height: 7rem;
-}
-
-header h1,
-header h2 {
-  font-variant: small-caps;
-  color: #4f3824;
-}
-
-header h1 {
-  font-size: 1.5rem;
-}
-
-header h2 {
-  font-size: 1rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-.signInSignUp a {
-  color: #444;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.signInSignUp {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.signInSignUp a:hover {
-  background-color: #666;
-  color: #ddd;
-}
-
-/*************** NAV ***************/
-nav {
-  background-color: #ddd;
-  padding: 10px;
-  border-radius: 15px;
-  margin-bottom: 5px;
-
-  display: flex;
-  justify-content: space-around;
-
-  text-align: center;
-}
-
-nav form {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-
-  width: 100%;
-
-  justify-content: center;
-}
-
-nav form div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 10px;
-
-  align-items: center;
-}
-
-button {
-  background-color: #444;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 16px;
-
-  color: #ddd;
-
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #666;
-}
+/* HEADER, NAV, FOOTER e alguns estilos do BODY em general.css */
 
 /*************** MAIN ***************/
 main {
-  background-color: #ddd;
+  background-color: #bebdbd;
   margin-bottom: 5px;
   border-radius: 10px;
 
@@ -155,29 +49,14 @@ textarea {
 }
 
 #botaoInteresse {
-  background-color: #444;
+  background-color: #02182B;
   border: none;
   border-radius: 5px;
   box-sizing: border-box;
   width: 90%;
   padding: 0.4rem;
 
-  color: #ddd;
+  color: #bebdbd;
 
   outline: none;
-}
-
-
-/*************** FOOTER ***************/
-footer {
-  background-color: #ddd;
-  padding: 10px;
-  border-radius: 15px;
-  margin-bottom: 5px;
-
-  display: flex;
-  align-items: center;
-
-  justify-content: space-evenly;
-  text-align: center;
 }

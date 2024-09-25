@@ -1,0 +1,52 @@
+body {
+  background-color: #ddd;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2% 0;
+}
+
+/* HEADER, NAV, FOOTER e alguns estilos do BODY em general.css */
+
+/*************** MAIN ***************/
+main {
+  background-color: #bebdbd;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+
+  text-align: center;
+}
+
+ul>li {
+  margin: 5px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.tabelaInteresses {
+  margin: 0 auto;
+  width: 60%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #9A031E;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}

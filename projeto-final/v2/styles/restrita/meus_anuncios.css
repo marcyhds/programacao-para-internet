@@ -5,18 +5,35 @@ body {
   padding: 2% 0;
 }
 
-/* HEADER e NAV e alguns do BODY estilos em general.css */
+/* HEADER, NAV, FOOTER e alguns estilos do BODY em general.css */
 
 /*************** MAIN ***************/
 main {
-  padding: 0;
+  background-color: #bebdbd;
+  padding-bottom: 15px;
   border-radius: 10px;
   margin-bottom: 5px;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   gap: 4px;
+
+  text-align: center;
+}
+
+ul>li {
+  margin: 5px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.cards {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .card {
@@ -24,6 +41,7 @@ main {
   width: 30%;
   padding: 10px;
   border-radius: 10px;
+  border: 1px solid #ddd;
 
   display: flex;
   flex-grow: 1;
@@ -45,4 +63,11 @@ main {
 
 h3 {
   color: #2a428c;
+}
+
+.botoesAnuncio {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  gap: 10px;
 }

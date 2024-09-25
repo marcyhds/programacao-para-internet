@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../styles/general.css">
-  <link rel="stylesheet" href="../../styles/publica/anuncio.css">
-  <title>Anúncio</title>
+  <link rel="stylesheet" href="../../styles/restrita/criar_anuncio.css">
+  <title>Veículos - Compra e Venda</title>
 </head>
 
 <body>
@@ -23,12 +23,7 @@
       </a>
     </div>
     <div class="signInSignUp">
-      <a href="../publica/cadastro.html">
-        <p>É anunciante?</p>
-        <p>Cadastre-se</p>
-      </a>
-      <span></span>
-      <a href="../publica/login.html">Entrar</a>
+      <a href="login.html">Sair</a>
     </div>
   </header>
 
@@ -68,41 +63,61 @@
   </nav>
 
   <main>
-    <div id="anuncio">
-      <h2>Anúncio</h2>
-      <div>
-        <img src="../../assets/carro1.png" alt="">
-      </div>
-      <div>
-        <h2>Lamborghini Urus S</h2>
-        <h3>R$ 3.290.000</h3>
-      </div>
-      <div>
-        <ul>
-          <li>Marca</li>
-          <li>Modelo</li>
-          <li>Ano</li>
-          <li>Localização</li>
-        </ul>
-      </div>
+    <div>
+      <h2>Crie um Anúncio</h2>
     </div>
-    <div id="interesse">
-      <h2>Entre em Contato com o Anunciante</h2>
+    <div>
+      <ul>
+        <li><a href="main.html">Página Principal</a></li>
+        <li><a href="criar_anuncio.html">Criar Anúncio</a></li>
+        <li><a href="meus_anuncios.html">Meus Anúncios</a></li>
+        <li><a href="interesses.html">Interesses</a></li>
+      </ul>
+    </div>
+    <div>
       <form>
         <div>
-          <label for="nome">Nome </label><br>
-          <input type="text" id="nome" required minlength="5" maxlength="50" autofocus>
+          <label for="marcaForm">Marca</label>
+          <input type="text" id="marcaForm" required>
         </div>
         <div>
-          <label for="telefone">Telefone </label><br>
-          <input type="tel" id="telefone" required>
+          <label for="modeloForm">Modelo</label>
+          <input type="text" id="modeloForm" required>
         </div>
         <div>
-          <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" rows="5" cols="20">
-          </textarea>
+          <label for="ano">Ano de Fabricação</label>
+          <input type="text" id="ano" required>
         </div>
-        <button id="botaoInteresse">Enviar Mensagem</button>
+        <div>
+          <label for="cor">Cor</label>
+          <input type="text" id="cor" required>
+        </div>
+        <div>
+          <label for="km">Quilometragem</label>
+          <input type="text" id="km" required>
+        </div>
+        <div>
+          <label for="descricao">Descrição</label>
+          <input type="text" id="descricao" required>
+        </div>
+        <div>
+          <label for="valor">Valor</label>
+          <input type="text" id="valor" required>
+        </div>
+        <div>
+          <label for="estado">Estado</label>
+          <input type="text" id="estado" required>
+        </div>
+        <div>
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" required>
+        </div>
+        <div>
+          <!-- 3 fotos -->
+          <label for="foto">Imagem do Veículo</label>
+          <input type="file" id="foto" required>
+        </div>
+        <button>Criar Anúncio</button>
       </form>
     </div>
   </main>
