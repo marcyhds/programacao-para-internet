@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interesses</title>
+</head>
+
+<body>
+  <main>
+    <input type="text">
+    <button>Adicionar</button>
+
+    <ol>
+      <li><span>Shows</span><button>X</button></li>
+      <li><span>Filmes</span><button>X</button></li>
+    </ol>
+  </main>
+
+  <script>
+    const addButton = document.querySelector("button")
+    const interesseField = document.querySelector("input")
+    const interesseList = document.querySelector("ol")
+
+    addButton.addEventListener("click", function () {
+      const newLi = document.createElement("li")
+      newLi.textContent = interesseField.value
+
+      interesseList.appendChild(newLi)
+      interesseField.value = ''
+    })
+
+    interesseField.addEventListener("keyup", e => {
+      if (e.key === "Enter") {
+
+        const newLi = document.createElement("li")
+        const newSpan = document.createElement("span")
+        const newButton = document.createElement("button")
+
+        newSpan.textContent = interesseField.value
+        newButton.textContent = 'X'
+
+        newLi.appendChild(newSpan)
+        newLi.appendChild(newButton)
+
+        interesseList.appendChild(newLi)
+
+        newButton.onclick = function () {
+          interesseList.removeChild(newLi)
+        }
+
+        interesseField.value = ''
+      }
+    })
+
+  </script>
+
+</body>
+
+</html>

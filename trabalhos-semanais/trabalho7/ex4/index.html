@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+</head>
+
+<body>
+  <main>
+    <h2>Cadastro de Usuário</h2>
+
+    <form name="cadastro">
+      <div>
+        <label for="user">Usário:</label>
+        <input type="text" id="user" name="user">
+        <span></span>
+      </div>
+      <div>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password">
+        <span></span>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="emal" name="email">
+        <span></span>
+      </div>
+
+      <button>Cadatrar</button>
+    </form>
+  </main>
+
+  <script>
+    document.forms.cadastro.onsubmit = validaForm
+
+    function validaForm(e) {
+      let form = e.target
+      let formValido = true
+
+      const spanUsuario = form.usuario.nextElementSibling
+      const spanSenha = form.senha.nextElementSibling
+      const spanEmail = form.email.nextElementSibling
+
+      spanUsuario.textContent = ""
+      spanSenha.textContent = ""
+      spanEmail.textContent = ""
+
+      if (form.usuario.value === "") {
+        spanUsuario.textContent = 'O usuário deve ser preenchido'
+        formValido = false
+      }
+      if (form.senha.value === "") {
+        spanUsuario.textContent = 'A senha deve ser preenchida'
+        formValido = false
+      }
+      if (form.email.value === "") {
+        spanUsuario.textContent = 'O email deve ser preenchido'
+        formValido = false
+      }
+
+      if (!formValido) e.preventDefault()
+    }
+  </script>
+</body>
+
+</html>

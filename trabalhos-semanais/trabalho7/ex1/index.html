@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Currículo de Fulana da Silva</title>
+</head>
+
+<body>
+
+  <main>
+    <img src="images/profile-picture.png" alt="Foto de Perfil" width="120" height="120">
+
+    <h1>Fulana da Silva</h1>
+
+    <section>
+      <h2>Perfil</h2>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquam deserunt ut voluptates impedit rem
+        laudantium ullam molestiae eos, et, explicabo ab dolor porro tempore, vero perspiciatis doloribus nulla
+        obcaecati.
+      </p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo deserunt iste impedit possimus dolorum
+        dignissimos delectus odit ex accusamus in sequi quas, sunt corporis optio ad accusantium soluta laudantium
+        atque?
+      </p>
+    </section>
+
+    <section>
+      <h2>Principais Competências</h2>
+
+      <ul>
+        <li>Progamadora C#</li>
+        <li>Desenvolvimento <b>Web</b></li>
+        <li>Desenvolvimento <b>Front-End</b></li>
+        <li>Desenvolvimento <b>Back-End</b></li>
+        <li>Banco de Dados</li>
+      </ul>
+
+      <h2>Formação Acadêmica</h2>
+
+      <p>Graduação em Ciência da Computação pela <a href="https://www5.usp.br" target="_blank">Universidade de São
+          Paulo</a>
+        (2018) e
+        Mestrado em Ciência da Computação pela <a href="https://ufu.br/" target="_blank">Universidade Federal de
+          Uberlândia</a> (2020)</p>
+    </section>
+
+    <section>
+      <h2>Experiência Profissional</h2>
+
+      <ol>
+        <li>
+          Empresa ABC (2015-2017)
+          <ul>
+            <li>Progamação em C</li>
+            <li>Progamação em VB</li>
+          </ul>
+        </li>
+        <li>
+          Empresa XYZ (2018-2021)
+          <ul>
+            <li>Desenvolvimento Front-End</li>
+            <li>Desenvolvimento Back-End</li>
+            <li>Desenvolvimento Web</li>
+          </ul>
+        </li>
+      </ol>
+
+      <a href="experiencia.html">Veja as experiências profissionais em detalhes</a>
+    </section>
+
+    <section>
+      <h2>Contato</h2>
+
+      <address>
+        <div>
+          <img src="images/address.png" alt="Ícone de Endereço" width="30" height="30">
+          João Naves de Ávila, Santa Mônica, Uberlândia
+        </div>
+
+        <div>
+          <img src="images/phone.png" alt="Ícone de Telefone" width="30" height="30">
+          <a href="tel:034-99999-9999">(34) 9 9999-9999</a>
+        </div>
+
+        <div>
+          <img src="images/email.png" alt="Ícone de Email" width="30" height="30">
+          <a href="mailto:fulana@email.com">fulana@email.com</a>
+        </div>
+      </address>
+    </section>
+
+  </main>
+
+  <script>
+    const nodesH2 = document.querySelectorAll("h2").forEach(function (nodeH2) {
+      const nextNode = nodeH2.nextElementSibling
+
+      nodeH2.addEventListener("click", function () {
+        nextNode.style.display = 'none'
+      })
+
+      nodeH2.addEventListener("dblclick", function () {
+        nextNode.style.display = 'block'
+      })
+    })
+
+  </script>
+
+</body>
+
+</html>
