@@ -1,0 +1,6 @@
+Nome 1;email1@mail.com;11 1111 1111
+<script>alert('Ataq.XSS')</script>;;
+<script>window.location='http://www.ufu.br'</script>;;
+aaa;aaa@mail.com;aaa
+;;
+jjj;;

@@ -1,0 +1,3 @@
+usuario1;$2y$10$xAA9QRJ8qkfvaHsbQ5WLz.nVviYAJmPBdYiBmSb7JBlWQ7ltpF85S
+aaa;$2y$10$e1GLnAnoD1OdBvuV9MNGIOO1ZR.Qexhn/zAEFs.Dafz3lcL/e01Eq
+usuario;$2y$10$ohxa1En/4XQrNWd4vxz1..sG9HDydo072brxoV9tHwjJ8EEKg6giW
