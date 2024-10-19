@@ -1,0 +1,15 @@
+i. 
+  200 OK
+
+ii. 
+  application/json
+  Esse campo indica o tipo do conteúdo retornado pela requisição, no caso é um json.
+
+iii. Qual o valor recebido no corpo da resposta HTTP (aba Response)?
+  {"rua":"Rua Tiradentes","bairro":"Fundinho","cidade":"Uberl\u00e2ndia"}
+
+iv. 
+  nginx
+
+v. 
+  Não, pois não foi enviado nenhum dado no corpo da requisição.

@@ -1,0 +1,9 @@
+------ Exercício b
+  
+  A principal diferença é a maneira que o tipo de resposta é especificada.
+
+------ Exercício c
+
+  O cabeçalho Content-Type possui valor application/json.
+  O cabeçalho Content-Length possui o valor 57.
+  Na aba payload é apresentado {cep: "38400-100", email: "fulano@mail.com", apikey: ""}. Isso representa os valores dos campos que foram enviado em formato JSON pela requisição, inclusive um campo oculto que envia o email.
