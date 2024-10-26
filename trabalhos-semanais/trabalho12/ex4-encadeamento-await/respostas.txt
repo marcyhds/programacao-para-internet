@@ -1,0 +1,43 @@
+latitude = -23.627
+longitude = -46.635
+
+--- variável clima
+current_weather: {time: '2024-10-25T22:15', interval: 900, temperature: 22.9, windspeed: 7.7, winddirection: 332, …}
+current_weather_units: {time: 'iso8601', interval: 'seconds', temperature: '°C', windspeed: 'km/h', winddirection: '°', …}
+elevation: 790
+generationtime_ms: 0.03695487976074219
+latitude: -23.625
+longitude: -46.625
+timezone: "GMT"
+timezone_abbreviation: "GMT"
+utc_offset_seconds: 0
+
+--- json
+
+{
+    "latitude": -23.625,
+    "longitude": -46.625,
+    "generationtime_ms": 0.03695487976074219,
+    "utc_offset_seconds": 0,
+    "timezone": "GMT",
+    "timezone_abbreviation": "GMT",
+    "elevation": 790.0,
+    "current_weather_units": {
+        "time": "iso8601",
+        "interval": "seconds",
+        "temperature": "°C",
+        "windspeed": "km/h",
+        "winddirection": "°",
+        "is_day": "",
+        "weathercode": "wmo code"
+    },
+    "current_weather": {
+        "time": "2024-10-25T22:15",
+        "interval": 900,
+        "temperature": 22.9,
+        "windspeed": 7.7,
+        "winddirection": 332,
+        "is_day": 0,
+        "weathercode": 3
+    }
+}

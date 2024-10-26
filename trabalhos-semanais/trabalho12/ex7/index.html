@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 7</title>
+
+  <style>
+    body {
+      background-color: #dedede;
+      font-family: Helvetica, Arial, sans-serif;
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 3rem;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      color: #2c3e50;
+    }
+
+    form {
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    div {
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    select {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 0.7rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    #retornoCotacao {
+      display: block;
+      margin-top: 1.5rem;
+      font-size: 2rem;
+      text-align: center;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Cotações R$</h1>
+
+    <p>Selecione uma das moedas disponíveis para buscar a cotação em tempo real.</p>
+    <p>API: <a href="https://docs.awesomeapi.com.br">https://docs.awesomeapi.com.br</a></p>
+  </header>
+
+  <main>
+    <form>
+      <div>
+        <label for="moeda">Moeda: </label>
+        <select name="moeda" id="moeda" required>
+          <option value="">Selecione</option>
+          <option value="USD">$ - Dólar</option>
+          <option value="EUR">€ - Euro</option>
+          <option value="JPY">¥ - Iene japônes</option>
+          <option value="GBP">£ - Libra esterlina</option>
+        </select>
+      </div>
+
+      <button>Buscar</button>
+    </form>
+
+    <span id="retornoCotacao"></span>
+  </main>
+
+
+  <script>
+
+    async function buscaCotacao(moeda) {
+
+      try {
+
+        const response = await fetch("https://economia.awesomeapi.com.br/last/" + moeda);
+
+        if (!response.ok) {
+          errorMessage = await response.text();
+          throw new Error(response.statusText + errorMessage);
+        }
+
+        const cotacao = await response.json();
+
+        const retorno = document.querySelector("#retornoCotacao");
+        retorno.textContent = cotacao[`${moeda}BRL`].bid;
+
+      } catch (e) {
+        console.error(e);
+        return;
+      }
+    }
+
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const moeda = document.querySelector("#moeda").value;
+
+      buscaCotacao(moeda);
+    })
+
+  </script>
+
+</body>
+
+</html>
